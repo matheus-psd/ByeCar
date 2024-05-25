@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ByeCar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+<body>
+        <!-- ===== HEADER ===== -->
+        <header>
+            <img src="./assets/dnc-logo.png" alt="dnc-logo" />
+            
+            <div class="header-title">
+                <h1 class="title">ByeCar</h1>
+            </div>      
+        </header>      
+        
+        <section>
+            <!-- ===== PRESENTATION ===== -->
+                <div class="presentation">
+                    <h2> Ter <b>uma moto</b> por assinatura <br>
+                    nunca foi tão fácil!</h2>
+
+                    <img src="./assets/left-img.png" alt="">
+                </div>
+
+            <!-- ===== RIGHT CONTENT ===== -->
+            <div class="right-content">
+                <h2 class="right-content-title">Conheça nossas <span>motos</span>!</h2>
+                
+            <!-- ===== CAROUSEL ===== -->
+                <div class="carousel">
+                  <button class="itens-carousel-previous" onclick="show(-1)">
+                    <img src="./assets/left-arrow.png" alt="" />
+                  </button>
+                  <ul class="carousel-cards">
+                    <li class="item-card" id="card">
+                        <h2>Scooter Elétrica Voltz EV1</h2>
+                      <img src="./assets/img-card-1.png" alt="" />
+                      <div class="card-label">
+                          <h1>A partir de</h1>
+                          <span>R$ 619,90</span>
+                          <h3>Plano de 30 meses</h3>
+                        </div>
+                    </li>
+                    <li class="item-card" id="card">
+                        <h2>Honda CB 500X</h2>
+                        <img src="./assets/img-card-2.png" alt="" />
+                        <div class="card-label">
+                            <h1>A partir de</h1>
+                            <span>R$ 619,90</span>
+                            <h3>Plano de 30 meses</h3>
+                        </div>
+                    </li>
+                  </ul>
+                  <button class="itens-carousel-next" onclick="show(+1)">
+                    <img src="./assets/right-arrow.png" alt="" />
+                  </button>
+                </div>
+                <button class="learn-more" onclick="showModal(index)">
+                    Saiba mais
+                </button>
+            </div>
+        </section>
+        <div class="modal" id="modal"></div>
+    </body>
+</html>
